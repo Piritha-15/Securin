@@ -36,7 +36,36 @@ http://localhost:8080
 
 POST /recipes
 
-{ "title": "Pasta", "cuisine": "Italian", "prepTime": 10, "cookTime": 20
+{ 
+"title": "Chocolate Cake", 
+"cuisine": "Dessert", 
+"prep_time": 20, 
+"cook_time": 40, 
+"description": "A rich chocolate cake...", 
+"nutrients": { 
+"calories": "500 kcal", 
+"carbohydrateContent": "60 g", 
+"proteinContent": "6 g", 
+"fatContent": "25 g" 
+}, 
+"serves": "6 servings" 
 }
-
 The response returns the generated ID.
+
+{
+    "cook_time": 40,
+    "cuisine": "Dessert",
+    "description": "A rich chocolate cake...",
+    "id": 33808,
+    "nutrients": {
+        "calories": "500 kcal",
+        "carbohydrateContent": "60 g",
+        "proteinContent": "6 g",
+        "fatContent": "25 g"
+    },
+    "prep_time": 20,
+    "rating": null,
+    "serves": "6 servings",
+    "title": "Chocolate Cake",
+    "total_time": 60
+}
